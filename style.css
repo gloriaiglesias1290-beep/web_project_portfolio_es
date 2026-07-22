@@ -1,12 +1,62 @@
-body {
+/* ==========================
+   RESET
+========================== */
+
+* {
   margin: 0;
-  background-color: #0f0f0f;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* ==========================
+   IMAGES
+========================== */
+img {
+  img {
+    display: block;
+    max-width: 100%;
+  }
 }
 
 .hero {
-  max-width: 1200px;
+  max-width: 1023px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.skills {
+  margin: auto;
+}
+
+.skills__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__cards {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.projects-card__content {
+  flex: 1;
+  padding: 20px;
+}
+
+.project-card__technologies {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
