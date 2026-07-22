@@ -40,6 +40,7 @@
 body {
   background-color: #111111;
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* ==========================
@@ -58,11 +59,30 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 
+  max-width:
+}
+
+.hero__name {
+  font-family: "Archivo Black", sans-serif;
 }
 
 .skills {
   margin: auto;
+  flex-wrap: wrap;
+  gat:
 }
+.skills__title {
+  font-family: "Archivo Black", sans-serif;
+}
+.projects__title {
+  font-family: "Archivo Black", sans-serif;
+}
+.footer__title {
+  font-family: "Archivo Black", sans-serif;
+}
+
+
 
 .skills__images {
   display: flex;
