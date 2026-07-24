@@ -126,10 +126,7 @@ main,
 }
 
 .hero__description {
-  max-width: 650px;
-
   line-height: 1.7;
-
   margin-bottom: 38px;
 }
 
@@ -164,7 +161,9 @@ main,
 }
 
 .hero__image {
-  flex: 0 1 390px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ==========================
