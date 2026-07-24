@@ -45,19 +45,27 @@
 
 body {
   margin: 0;
-  background-color: #111111;
-  color: #ffffff;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
+  background-color: #111111;
 
-  background-image: radial-gradient(
-    circle at 72% 18%,
-    rgba(109, 109, 255, 0.22),
-    transparent 38%
-  );
+  background-image:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(109, 109, 255, 0.22) 0%,
+      rgba(109, 109, 255, 0.12) 30%,
+      rgba(109, 109, 255, 0.05) 55%,
+      transparent 75%
+    ),
+    radial-gradient(
+      circle at 55% 95%,
+      rgba(109, 109, 255, 0.18) 0%,
+      rgba(109, 109, 255, 0.08) 35%,
+      transparent 75%
+    );
 
   background-repeat: no-repeat;
 }
-
 /* ==========================
    IMAGES
 ========================== */
@@ -355,5 +363,142 @@ FOOTER
   .footer {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media screen and (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero__image {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__content {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .hero__photo {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .hero__name {
+    font-size: 40px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .hero__profession {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+  /* SKILLS */
+
+  .skills {
+    margin-top: 48px;
+  }
+
+  .skills__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .skills__images {
+    justify-content: flex-start;
+    gap: 44px;
+    flex-wrap: wrap;
+  }
+
+  .skills__images img {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* PROJECTS */
+
+  .projects {
+    margin-top: 60px;
+  }
+
+  .projects__title {
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 36px;
+  }
+
+  .projects__cards {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .project-card__content {
+    padding: 24px;
+  }
+
+  .project-card__title {
+    font-size: 24px;
+  }
+
+  .project-card__description {
+    font-size: 16px;
+  }
+
+  .project-card__technologies img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .project-card__links {
+    justify-content: center;
+  }
+
+  .project-card__links img {
+    width: 90px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 60px 20px;
+  }
+
+  .footer__title {
+    font-size: 30px;
+  }
+
+  .footer__text {
+    font-size: 18px;
+  }
+
+  .footer__social {
+    gap: 24px;
   }
 }
