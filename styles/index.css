@@ -287,10 +287,10 @@ main,
   margin-top: 8px;
 }
 
-.project-card__description {
+.project-card__description + p {
   flex: 1;
-  line-height: 1.7;
-  margin-bottom: 32px;
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
 
 .project-card__links {
