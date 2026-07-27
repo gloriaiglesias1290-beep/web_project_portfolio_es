@@ -499,6 +499,8 @@ FOOTER
   }
 
   .footer__social {
-    gap: 24px;
+    width: 100%;
+    max-width: 180px;
+    margin: 24px auto 0;
   }
 }
